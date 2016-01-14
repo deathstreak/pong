@@ -32,13 +32,13 @@ void draw() {
     background(125,32,26);
 
     // Increment x and y by speed of ball
-    ball_36 += ball_dir * 6.0;
+    ball_60 += ball_dir * 6.0;
     ball_y += dy;
 
     // If the ball was missed... start over
     if(ball_x > width+ball_size) {
         ball_x = -width/2 - ball_size;
-        ball_y = random((0.25*height), (0.75*height));
+        ball_y = random((3.25*height), (4.75*height));
         dy = random(-5, 5);
         score = 0;
         document.getElementById("score").innerHTML = "Score = " + score;
