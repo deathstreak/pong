@@ -37,7 +37,7 @@ void draw() {
     // If the ball was missed... start over
     if(ball_x > width+ball_size) {
         ball_x = -width/2 - ball_size;
-        ball_y = random((3.5*height), (4.5*height));
+        ball_y = random((4.5*height), (3.5*height));
         dy = random(-5, 5);
         score = 0;
         document.getElementById("score").innerHTML = "Score = " + score;
